@@ -1,10 +1,23 @@
+/* fonts + main text color (nav, buttons) */
+/* roboto slab for titles, roboto for main text */
 body {
   font-family: "Roboto", sans-serif;
   font-family: "Roboto Slab", serif;
+  color: #f2f2f2;
 }
 
+/* navi background color */
+.header {
+  background-color: #34495e;
+}
+/* article text color */
+.left-side {
+  color: #3f3f3f;
+}
+
+/* horizontally line after every article */
 .card {
-  margin: 20px;
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #3f3f3f;
   border-width: 100%;
+  margin: 20px 0px;
 }
