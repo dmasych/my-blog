@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My blog</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -14,18 +15,54 @@
     <div class="header">
       <h1 class="site-logo">Logo</h1>
       <ul class="menu">
-        <li>Главная</li>
-        <li>Блог</li>
-        <li>Галерея</li>
-        <li>О нас</li>
-        <li>Контакты</li>
+        <li class="menu-item">
+          Главная
+          <div class="dropdown">
+            <ul>
+                <li class="dropdown-item">Sub menu item 1</li>
+                <li class="dropdown-item">Sub menu item 2</li>
+                <li class="dropdown-item">Sub menu item 3</li>
+                <li class="dropdown-item">Sub menu item 4</li>
+                <li class="dropdown-item">Sub menu item 5</li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item">
+          Блог
+          <div class="dropdown">
+            <ul>
+              <li class="dropdown-item">Sub menu item 1</li>
+              <li class="dropdown-item">Sub menu item 2</li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item">
+          Галерея
+          <div class="dropdown">
+            <ul>
+              <li class="dropdown-item">Sub menu item 1</li>
+              <li class="dropdown-item">Sub menu item 2</li>
+              <li class="dropdown-item">Sub menu item 3</li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item">
+          О нас
+          <div class="dropdown">
+            <ul>
+              <li class="dropdown-item">Sub menu item 1</li>
+              <li class="dropdown-item">Sub menu item 2</li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item">Контакты</li>
       </ul>
     </div>
     <div class="wrapper">
       <div class="left-side">
         <div class="card">
           <div class="card-header">
-            <img
+            <img class="card-img"
               src="img/abstract-light-circle.jpg"
               alt="abstract-light-circle"
             />
@@ -44,7 +81,7 @@
         </div>
         <div class="card">
           <div class="card-header">
-            <img
+            <img class="card-img"
               src="img/abstract-light-circle.jpg"
               alt="abstract-light-circle"
             />
@@ -70,7 +107,7 @@
           <a href="" class="registration">Регистрация</a>
           <a href="" class="button">Войти</a>
         </div>
-        <div class="serch">
+        <div class="search">
           <h4>Что-то ищем?</h4>
           <input type="text" name="input-serch" id="" />
           <a href="" class="button">Поиск</a>

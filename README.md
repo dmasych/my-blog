@@ -4,3 +4,4 @@ My first stand alone project using html5, css3, git knowledges. Get my temlpate 
 
 11/04/2020 made html part of index file.
 14/04/2020 added css colors (backgrounds,fonts)
+17/04/2020 added some css part, added reset.css

@@ -2,22 +2,105 @@
 /* roboto slab for titles, roboto for main text */
 body {
   font-family: "Roboto", sans-serif;
-  font-family: "Roboto Slab", serif;
-  color: #f2f2f2;
 }
 
-/* navi background color */
+/* header */
 .header {
   background-color: #34495e;
+  padding: 0 15px;
 }
-/* article text color */
-.left-side {
-  color: #3f3f3f;
+.site-logo{
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+  font-size: 32px;
+  font-weight: 600;
+  display: inline-block;
+  padding: 15px;
+}
+.menu {
+  float: right;
+}
+.menu-item{
+  color: #fff;
+  display: inline-block;
+  padding: 20px;
+  position: relative;
+}
+.menu-item:hover {
+  background-color: #fff;
+  color: #333;
+}
+.menu-item:hover .dropdown {
+  opacity: 1;
+  top: 47px;
+}
+.menu-item .dropdown {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #eee;
+  z-index: 2;
+  padding: 15px;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+.dropdown-item {
+  margin-bottom: 5px;
+}
+/* header end */
+
+/* wrapper */
+.wrapper {
+  overflow: auto;
+  margin-top: 40px;
+  padding: 0 30px;
 }
 
-/* horizontally line after every article */
+/* left side */
+.left-side {
+  float: left;
+  width: 70%;
+}
 .card {
+  margin-bottom: 50px;
   border-bottom: 2px solid #3f3f3f;
   border-width: 100%;
   margin: 20px 0px;
+}
+.card-header {
+  position: relative;
+  z-index: 1;
+}
+ img {
+  width: 100%;
+}
+.card-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.card-text{
+  line-height: 170%;
+  margin-top: 5px;
+}
+.card-footer {
+  margin-top: 10px;
+}
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #2980b9;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+}  
+/* left side end */
+
+/* right side */
+.right-side {
+  float: right;
+  width: 30%;
+}
+.search, .subjects, .archiv, .comments {
+  background-color: #34495e;
 }
